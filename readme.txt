@@ -56,6 +56,9 @@ Use this CSS !
 
 == Changelog ==
 
+= 2.1 =
+* fixed privacy page
+
 = 2.0 =
 * tmp folder predefined default
 * checkboxes for automatic page creation to makes it even simpler for users to install

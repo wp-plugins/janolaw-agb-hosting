@@ -105,7 +105,7 @@ function janolaw_plugin_options() {
 		$post = array(
 				'ID' => get_option('janolaw_privacy_page_id'),
 				'comment_status' => 'closed',
-				'post_content' => '[janolaw_datenschutzerkl&auml;rung]',
+				'post_content' => '[janolaw_datenschutzerklaerung]',
 				'post_name' => 'agb',
 				'post_status' => 'publish',
 				'post_title' => 'Datenschutzerkl&auml;rung',

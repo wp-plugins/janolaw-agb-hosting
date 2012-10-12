@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Janolaw_AGB\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-12 11:22+0100\n"
+"PO-Revision-Date: 2012-10-12 11:30+0100\n"
+"Last-Translator: JG <jg>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../janolaw_agb.php:56
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Sie haben nicht die benötigten Rechte um diese Seite anzuzeigen."
+
+#: ../janolaw_agb.php:130
+msgid "Your Janolaw User ID is issued by Janolaw AG by registering at"
+msgstr "Ihre Janolaw User ID, ausgestellt von der Janolaw AGB nach Registrierung unter"
+
+#: ../janolaw_agb.php:137
+msgid "Your Janolaw Shop ID is issued by Janolaw AG by registering at"
+msgstr "Ihre Janolaw Shop ID, ausgestellt von der Janolaw AGB nach Registrierung unter"
+
+#: ../janolaw_agb.php:142
+msgid "Cache Path"
+msgstr "Cache Pfad"
+
+#: ../janolaw_agb.php:144
+msgid "Path to store cached documents e.g. /tmp for Unix based systems like Linux"
+msgstr "Pfad zu zwischengespeicherten Dokumenten z.B: /tmp für Unix basierende Systeme wie Linux"
+
+#: ../janolaw_agb.php:148
+msgid "Create Page AGB"
+msgstr "Erzeuge Seite AGB"
+
+#: ../janolaw_agb.php:151
+#: ../janolaw_agb.php:158
+#: ../janolaw_agb.php:165
+#: ../janolaw_agb.php:172
+msgid "Create a static page with pagetag included"
+msgstr "Erzeuge eine statische Seite mit dem entsprechenden Tag"
+
+#: ../janolaw_agb.php:155
+msgid "Create Page Imprint"
+msgstr "Erzeuge Seite Impressum"
+
+#: ../janolaw_agb.php:162
+msgid "Create Page Widerruf"
+msgstr "Erzeuge Seite Widerruf"
+
+#: ../janolaw_agb.php:169
+msgid "Create Page Privacy"
+msgstr "Erzeuge Seite Datenschutz"
+
+#: ../janolaw_agb.php:176
+msgid "Howto"
+msgstr "Anleitung"
+
+#: ../janolaw_agb.php:177
+msgid "Check the Checkbox of the desired document to create automatically."
+msgstr "Wählen Sie die entsprechende Checkbox um die Dokumente automatisch zu generieren."
+
+#: ../janolaw_agb.php:179
+msgid "Alternative:"
+msgstr "Alternative:"
+
+#: ../janolaw_agb.php:180
+msgid "Insert one of the following Tags into any Page to display the refering Janolaw document:"
+msgstr "Fügen Sie eines der folgenden Tags in eine Seite ein um das entsprechende Janolaw Dokument anzuzeigen:"
+
+#: ../janolaw_agb.php:192
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+

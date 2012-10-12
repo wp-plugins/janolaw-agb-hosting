@@ -56,6 +56,9 @@ Use this CSS !
 
 == Changelog ==
 
+= 2.2 =
+* added multilanguage files for English + German
+
 = 2.1 =
 * fixed privacy page
 

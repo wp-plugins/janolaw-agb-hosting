@@ -3,7 +3,7 @@
 Plugin Name: Janolaw AGB Hosting
 Plugin URI: http://www.janolaw.de/internetrecht/agb/agb-hosting-service/
 Description: This Plugin get hosted legal documents provided by Janolaw AG for Web-Shops and Pages.
-Version: 2.0
+Version: 2.2
 Author: Jan Giebels
 Author URI: http://code-worx.de
 License: GPL2
@@ -27,6 +27,8 @@ License: GPL2
 */
 ?>
 <?php
+
+load_plugin_textdomain('janolaw_agb', "/wp-content/plugins/janolaw_agb/languages/");
 
 function janolaw_agb_menu() {
 	add_options_page('Janolaw AGB Hosting', 'Janolaw AGB Hosting', 9, basename(__FILE__), 'janolaw_plugin_options');
@@ -125,57 +127,57 @@ function janolaw_plugin_options() {
 			<tr valign="top">
 				<th scope="row">Janolaw User ID</th>
 				<td><input type="text" name="janolaw_user_id"
-					value="<?= get_option('janolaw_user_id'); ?>" /> <small><?php _e('Your Janolaw User ID is issued by Janolaw AG by registering at'); ?>
+					value="<?= get_option('janolaw_user_id'); ?>" /> <small><?php _e('Your Janolaw User ID is issued by Janolaw AG by registering at', 'janolaw_agb'); ?>
 					<a href="http://www.janolaw.de/agb-service/#menu" target="_blank">Janolaw
 						AGB Hosting Service</a></small></td>
 			</tr>
 			<tr valign="top">
 				<th scope="row">Janolaw Shop ID</th>
 				<td><input type="text" name="janolaw_shop_id"
-					value="<?= get_option('janolaw_shop_id'); ?>" /> <small><?php _e('Your Janolaw Shop ID is issued by Janolaw AG by registering at'); ?>
+					value="<?= get_option('janolaw_shop_id'); ?>" /> <small><?php _e('Your Janolaw Shop ID is issued by Janolaw AG by registering at', 'janolaw_agb'); ?>
 					<a href="http://www.janolaw.de/agb-service/#menu" target="_blank">Janolaw
 						AGB Hosting Service</a></small></td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><?php _e('Cache Path'); ?></th>
+				<th scope="row"><?php _e('Cache Path', 'janolaw_agb'); ?></th>
 				<td><input type="text" name="janolaw_cache_path"
-					value="<?= $cachepath ?>" /> <small><?php _e('Path to store cached documents e.g. /tmp for Unix based systems like Linux'); ?></small>
+					value="<?= $cachepath ?>" /> <small><?php _e('Path to store cached documents e.g. /tmp for Unix based systems like Linux', 'janolaw_agb'); ?></small>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><?php _e('Create Page AGB'); ?></th>
+				<th scope="row"><?php _e('Create Page AGB', 'janolaw_agb'); ?></th>
 				<td><input type="hidden" name="janolaw_agb_page_id" value ="<?= get_option('janolaw_agb_page_id'); ?>" />
 				<input type="checkbox" name="janolaw_agb_page"
-					value ="1" <?= checked( 1, get_option('janolaw_agb_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included'); ?></small>
+					value ="1" <?= checked( 1, get_option('janolaw_agb_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included', 'janolaw_agb'); ?></small>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><?php _e('Create Page Imprint'); ?></th>
+				<th scope="row"><?php _e('Create Page Imprint', 'janolaw_agb'); ?></th>
 				<td><input type="hidden" name="janolaw_imprint_page_id" value ="<?= get_option('janolaw_imprint_page_id'); ?>" />
 					<input type="checkbox" name="janolaw_imprint_page"
-					value ="1" <?= checked( 1, get_option('janolaw_imprint_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included'); ?></small>
+					value ="1" <?= checked( 1, get_option('janolaw_imprint_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included', 'janolaw_agb'); ?></small>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><?php _e('Create Page Widerruf'); ?></th>
+				<th scope="row"><?php _e('Create Page Widerruf', 'janolaw_agb'); ?></th>
 				<td><input type="hidden" name="janolaw_widerruf_page_id" value ="<?= get_option('janolaw_widerruf_page_id'); ?>" />
 				<input type="checkbox" name="janolaw_widerruf_page"
-					value ="1" <?= checked( 1, get_option('janolaw_widerruf_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included'); ?></small>
+					value ="1" <?= checked( 1, get_option('janolaw_widerruf_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included', 'janolaw_agb'); ?></small>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><?php _e('Create Page Privacy'); ?></th>
+				<th scope="row"><?php _e('Create Page Privacy', 'janolaw_agb'); ?></th>
 				<td><input type="hidden" name="janolaw_privacy_page_id" value ="<?= get_option('janolaw_privacy_page_id'); ?>" />
 				<input type="checkbox" name="janolaw_privacy_page"
-					value ="1" <?= checked( 1, get_option('janolaw_privacy_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included'); ?></small>
+					value ="1" <?= checked( 1, get_option('janolaw_privacy_page'), false ) ?> /> <small><?php _e('Create a static page with pagetag included', 'janolaw_agb'); ?></small>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><h3><?php _e('Howto'); ?></h3></th>
-				<td><?php _e('Check the Checkbox of the desired document to create automatically.'); ?>
+				<th scope="row"><h3><?php _e('Howto', 'janolaw_agb'); ?></h3></th>
+				<td><?php _e('Check the Checkbox of the desired document to create automatically.', 'janolaw_agb'); ?>
 				<br /><br />
-					<i><?php _e('Alternative:'); ?></i><br />
-					<?php _e('Insert one of the following Tags into any Page to display the refering Janolaw document:'); ?>
+					<i><?php _e('Alternative:', 'janolaw_agb'); ?></i><br />
+					<?php _e('Insert one of the following Tags into any Page to display the refering Janolaw document:', 'janolaw_agb'); ?>
 						<blockquote>
 						[janolaw_agb]<br />
 						[janolaw_impressum]<br />
@@ -187,7 +189,7 @@ function janolaw_plugin_options() {
 
 		<p class="submit">
 			<input type="submit" class="button-primary"
-				value="<?php _e('Save Changes'); ?>" />
+				value="<?php _e('Save Changes', 'janolaw_agb'); ?>" />
 		</p>
 	</form>
 </div>

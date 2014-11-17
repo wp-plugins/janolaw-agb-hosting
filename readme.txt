@@ -56,9 +56,6 @@ Use this CSS !
 
 == Changelog ==
 
-= 3.0 =
-* added support for Wordpress 4.x
-
 = 2.2 =
 * added multilanguage files for English + German
 
